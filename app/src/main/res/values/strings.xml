@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Travel Honor</string>
+    <string name="title_activity_travel_honor">TravelHonor</string>
+    <string name="Hello_World">Hello World</string>\
+
+    <string name="action_settings">Settings</string>
+    <string name="sign_up"><b>Sign Up</b></string>
+    <string name="username"><b>Username:</b></string>
+    <string name="password"><b>Password:</b></string>
+    <string name="my_medal">My Medal</string>
+    <string name="all_medal">All Medal</string>
+
+    <string name="account_manage">Account Manage</string>
+    <string name="home_page">Home Page</string>
+    <string name="profile">Profile</string>
+    <string name="profile_name">Name</string>
+    <string name="profile_lat">Latitude</string>
+    <string name="profile_lng">Longitude</string>
+    <string name="profile_remark">Remark</string>
+    <string name="my_honor">My Honor</string>
+    <string name="sign_in_hint"><b>\nIf you already have an account, sign in here:</b></string>
+    <string name="sign_in"><b>Sign In</b></string>
+    <string name="sign_out">Sign Out</string>
+    <string name="settings">Settings</string>
+
+    <string name="medal_museum">Medal Museum</string>
+    <string name="my_medal_1">My Medal 1</string>
+    <string name="my_medal_2">My Medal 2</string>
+    <string name="my_medal_3">My Medal 3</string>
+    <string name="my_medal_4">My Medal 4</string>
+    <string name="my_medal_5">My Medal 5</string>
+    <string name="my_medal_6">My Medal 6</string>
+    <string name="my_medal_7">My Medal 7</string>
+    <string name="my_medal_8">My Medal 8</string>
+    <string name="my_medal_9">My Medal 9</string>
+    <string name="my_medal_10">My Medal 10</string>
+    <string name="my_achievement">My Achievement</string>
+</resources>

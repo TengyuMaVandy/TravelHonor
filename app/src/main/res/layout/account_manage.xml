@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/account_manage_background2">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:id="@+id/llSignUp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:textColor="@color/white"
+                    android:text="@string/sign_up"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp">
+                </View>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/username"
+                        android:textColor="@color/white"
+                        android:id="@+id/tvUsername"/>
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:layout_weight="3"
+                        android:textColor="@color/white"
+                        android:id="@+id/etUsername"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/password"
+                        android:textColor="@color/white"
+                        android:id="@+id/tvPassword"/>
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:layout_weight="3"
+                        android:textColor="@color/white"
+                        android:id="@+id/etPassword"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up"
+                    android:textAllCaps="false"
+                    android:layout_gravity="end"
+                    android:id="@+id/btSignUp"/>
+
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/rlSignIn">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="@string/sign_in_hint"
+                        android:id="@+id/tvSignIn"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sign_in"
+                        android:layout_alignParentRight="true"
+                        android:textAllCaps="false"
+                        android:id="@+id/btSignIn" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:id="@+id/llSignIn">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:textColor="@color/white"
+                    android:text="@string/sign_in"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp">
+                </View>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/username"
+                        android:textColor="@color/white"
+                        android:id="@+id/tvSIUsername"/>
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:layout_weight="3"
+                        android:textColor="@color/white"
+                        android:id="@+id/etSIUsername"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/password"
+                        android:textColor="@color/white"
+                        android:id="@+id/tvSIPassword"/>
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:layout_weight="3"
+                        android:textColor="@color/white"
+                        android:id="@+id/etSIPassword"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_in"
+                    android:textAllCaps="false"
+                    android:layout_gravity="end"
+                    android:id="@+id/btSISignIn"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/llProfile">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:textColor="@color/white"
+                    android:text="@string/username"
+                    android:id="@+id/tvPfUsername"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:text="@string/profile_name"
+                    android:id="@+id/tvPfName"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textColor="@color/white"
+                    android:text="@string/profile_lat"
+                    android:id="@+id/tvPfLat"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textColor="@color/white"
+                    android:text="@string/profile_lng"
+                    android:id="@+id/tvPfLng"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:textColor="@color/white"
+                    android:text="@string/profile_remark"
+                    android:id="@+id/tvPfRemark"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="@string/profile"
+                    android:id="@+id/tvPf"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/my_honor"
+                    android:textAllCaps="false"
+                    android:layout_gravity="end"
+                    android:id="@+id/btPf"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/llMyMedal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="75dp"
+                        android:contentDescription="@string/my_medal_1"
+                        android:id="@+id/ivMyMedal1"
+                        android:src="@drawable/alder_terrace_medal_uncollect"/>
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="75dp"
+                        android:contentDescription="@string/my_medal_2"
+                        android:id="@+id/ivMyMedal2"
+                        android:src="@drawable/fgh_medal_uncollect"/>
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="75dp"
+                        android:contentDescription="@string/my_medal_3"
+                        android:id="@+id/ivMyMedal3"
+                        android:src="@drawable/vanderbilt_stadium_medal_uncollect"/>
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="75dp"
+                        android:contentDescription="@string/my_medal_4"
+                        android:id="@+id/ivMyMedal4"
+                        android:src="@drawable/student_life_center_medal_uncollect"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="75dp"
+                            android:contentDescription="@string/my_medal_5"
+                            android:id="@+id/ivMyMedal5"
+                            android:src="@drawable/medical_center_medal_uncollect"/>
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="75dp"
+                        android:contentDescription="@string/my_medal_6"
+                        android:id="@+id/ivMyMedal6"
+                        android:src="@drawable/recreation_center_medal_uncollect"/>
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="75dp"
+                        android:contentDescription="@string/my_medal_7"
+                        android:id="@+id/ivMyMedal7"
+                        android:src="@drawable/stevenson_center_medal_uncollect"/>
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="75dp"
+                        android:contentDescription="@string/my_medal_8"
+                        android:id="@+id/ivMyMedal8"
+                        android:src="@drawable/central_library_medal_uncollect"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="75dp"
+                        android:contentDescription="@string/my_medal_9"
+                        android:id="@+id/ivMyMedal9"
+                        android:src="@drawable/law_school_medal_uncollect"/>
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="75dp"
+                        android:contentDescription="@string/my_medal_10"
+                        android:id="@+id/ivMyMedal10"
+                        android:src="@drawable/vanderbilt_hospital_medal_uncollect"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/llMyAchievement">
+
+                    <ImageView
+                        android:layout_width="350dp"
+                        android:layout_height="110dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/my_achievement"
+                        android:id="@+id/ivMyAchievement"
+                        android:src="@drawable/all_collected"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/medal_museum"
+                    android:textAllCaps="false"
+                    android:layout_gravity="end"
+                    android:id="@+id/btMedalMuseum"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+
